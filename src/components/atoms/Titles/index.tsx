@@ -15,13 +15,28 @@ const MediumTitle = () => {
   );
 };
 const SubTitle = () => {
-  return <div>Index</div>;
+  return (
+    <h3 className='text-center lg:text-left text-xl lg:text-[24px] font-light text-secondary '>
+      Simple Budgeting
+    </h3>
+  );
 };
 const TextTitle = () => {
-  return <div>Index</div>;
+  return (
+    <h3 className='text-center lg:text-left text-xl lg:text-[24px] font-light text-secondary '>
+      Fast Onboarding
+    </h3>
+  );
 };
-const SubText = () => {
-  return <div>Index</div>;
+const SubText = ({ text }: { text: string }) => {
+  return (
+    <div>
+      <p className='text-base text-gris font-light text-center lg:text-left max-w-72 lg:max-w-96'>
+        {text ??
+          'Take your financial life online. Your Easybank account will be a one-stop-shop for spending, saving, budgeting, investing, and much more.'}
+      </p>
+    </div>
+  );
 };
 
 export { HeroTitle, MediumTitle, SubTitle, TextTitle, SubText };
