@@ -14,24 +14,24 @@ const MediumTitle = () => {
     </h2>
   );
 };
-const SubTitle = () => {
+const SubTitle = ({ title }: { title: string }) => {
   return (
     <h3 className='text-center lg:text-left text-xl lg:text-[24px] font-light text-secondary '>
-      Simple Budgeting
+      {title}
     </h3>
   );
 };
-const TextTitle = () => {
+const TextTitle = ({ text }: { text: string }) => {
   return (
-    <h3 className='text-center lg:text-left text-xl lg:text-[24px] font-light text-secondary '>
-      Fast Onboarding
+    <h3 className='text-center lg:text-left text-xl lg:text-[16px] font-light text-secondary '>
+      {text}
     </h3>
   );
 };
 const SubText = ({ text }: { text: string }) => {
   return (
     <div>
-      <p className='text-base text-gris font-light text-center lg:text-left max-w-72 lg:max-w-96'>
+      <p className='text-base text-gris font-light text-center lg:text-left max-w-72 lg:max-w-72'>
         {text ??
           'Take your financial life online. Your Easybank account will be a one-stop-shop for spending, saving, budgeting, investing, and much more.'}
       </p>
