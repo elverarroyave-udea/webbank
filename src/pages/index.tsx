@@ -5,7 +5,7 @@ import Hero from '@/components/organisms/Hero';
 export default function Home() {
   return (
     <section>
-      Hello World!!!
+      Hello World Actions!!!
       <div className='flex flex-col items-center  w-full '>
         <Hero />
       </div>
