@@ -3,7 +3,7 @@ import React from 'react';
 const HeroTitle = () => {
   return (
     <h1 className='text-center lg:text-left text-[40px] lg:text-[56px] font-light text-secondary max-w-72 lg:max-w-96'>
-      Next generation digital banking
+      Nueva Generacion - Prueba de VERCEL
     </h1>
   );
 };
